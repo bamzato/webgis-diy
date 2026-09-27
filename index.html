@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>WebGIS Kependudukan DIY</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <h1>WEBGIS KEPENDUDUKAN DIY</h1>
+
+        <p>
+            Aplikasi untuk menampilkan informasi jumlah penduduk
+            kabupaten/kota di DIY.
+        </p>
+
+    </header>
+
+
+    <main class="main-content">
+
+        <aside class="info-panel">
+
+            <h2>Informasi Wilayah</h2>
+
+            <p id="status">
+                Pilih wilayah untuk melihat informasi kependudukan.
+            </p>
+
+            <label for="wilayah-select">
+                Pilih Kabupaten/Kota
+            </label>
+
+            <select id="wilayah-select">
+                <option value=""> Pilih wilayah </option>
+            </select>
+
+
+            <button id="btn-peta">
+                Tampilkan Peta
+            </button>
+        </aside>
+
+
+        <section id="map-container" class="map-container">
+
+            <div id="map"></div>
+
+            <div id="map-placeholder" class="map-placeholder">
+
+                <h2>WebGIS Kependudukan DIY</h2>
+
+                <p>
+                    Jelajahi informasi kependudukan kabupaten/kota
+                    di Daerah Istimewa Yogyakarta.
+                </p>
+
+            </div>
+
+            <div class="map-legend">
+                <h3>Kepadatan Penduduk (jiwa/km²)</h3>
+                <div class="legend-item">
+                    <span class="legend-color low"></span>
+                    <span>&lt; 2.000</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color medium"></span>
+                    <span>2.000 – 10.000</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color high"></span>
+                    <span>&gt; 10.000</span>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <h2>Tentang Aplikasi</h2>
+
+        <p>
+            WebGIS Kependudukan DIY merupakan aplikasi sederhana untuk menampilkan informasi jumlah penduduk
+            kabupaten/kota di Daerah Istimewa Yogyakarta.
+        </p>
+
+        <p> Aplikasi ini menggunakan HTML, CSS, JavaScript, Leaflet, dan GeoJSON untuk menampilkan informasi
+            kependudukan dalam bentuk peta interaktif. </p>
+
+        <a href="https://www.bps.go.id">
+            Sumber Data
+        </a>
+
+    </footer>
+
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
